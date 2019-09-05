@@ -1,9 +1,16 @@
 // GroupProjectCPP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+//testing visuaol studio github test
+//Thiis some test 
 
+<<<<<<< HEAD
 #include <iostream>
 #include <cmath>
+=======
+>>>>>>> 6262eaa57e69a49f7c290aa04bc6e3d6957e2009
 
+#include <iostream>
+/*
 int main()
 {
 	/*	double Item_cost;
@@ -41,6 +48,7 @@ int main()
 		}
 
 
+<<<<<<< HEAD
 		while(Price_adjusted == 0)
 		{
 			price_adjusted = Item_cost + Item_cost * inflation_rate;
@@ -98,6 +106,15 @@ int main()
 	std::cout << mpg;
 
 
+=======
+	
+	while(Price_adjusted == 0)
+	{
+		price_adjusted = Item_cost + Item_cost * inflation_rate;
+		count++;
+	}
+	
+>>>>>>> 6262eaa57e69a49f7c290aa04bc6e3d6957e2009
 
 
 
@@ -118,3 +135,149 @@ int main()
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
+
+#include <iostream>
+
+int main()
+{
+	char user_input='Y';
+
+	while (user_input == 'Y') {
+		double weight_in_pounds;
+		double height_in_inches;
+		int age_in_years;
+		//str m = male;
+		//st f = female;
+		double BMR = 0.0;
+		//double BMR_m=0.0;
+		char gender;
+
+		//<< this program estimates the number of calories your body needs to maintain your weight without exercising\n>>
+
+		std::cout << "Please enter your weight in pounds";
+		std::cin >> weight_in_pounds;
+
+		std::cout << "Please enter your height in inches";
+		std::cin >> height_in_inches;
+
+		std::cout << "Please enter your age in years";
+		std::cin >> age_in_years;
+
+		std::cout << "please enter your gender";
+		std::cin >> gender;
+
+
+		if (gender == 'm') {
+			BMR = 66 + (3.3 * weight_in_pounds) + (12.9 * height_in_inches) - (6.8 * age_in_years);
+		}
+		else {
+			BMR = 655 + (4.3 * weight_in_pounds) + (4.7 * height_in_inches) - (4.7 * age_in_years);
+		}
+
+
+
+		int number_of_chocolate_bars = BMR / 230;
+
+		std::cout << "number of chocolate bars = " <<
+			number_of_chocolate_bars;
+
+		std::cout << "\n\nDo you want to continue Y or N = ";
+		std::cin >> user_input;
+
+	}
+}
+*/
+
+
+//A program to score the rock-paper-sissor game. Each of two users types in either P,R, or S.
+//The program then announces the winner as the basis for determining the winner: 
+//Paper covers Rock, Rock breaks Scissors, Scissors cut Paper, or Nobody Wins. 
+//Program wil allow the users to use lowercase as well as uppercase letters.
+//Program will include a loop that lets the user play again until user says he or she is done.
+
+int main()
+{
+	//heading on page
+	std::cout << "LET'S PLAY! \n ROCK! PAPER! SISSORS!";
+	std::cout << "REMEMBER!! \n lowercase r or uppercase R for ROCK\n";
+	std::cout << "lowercase p or uppercase P for PAPER \n";
+	std::cout << "lowercase s or uppercase S for SCISSOR \n";
+
+	//Player identifier
+	char player_one;
+	char player_two;
+
+	//Player One input box
+	std::cout  << "Rock Paper or Sissors?\n";
+	std::cin >> player_one;
+	//Player Two input box
+	std::cout  << "Rock Paper or Sissors?\n";
+	std::cin >> player_two;
+
+	//Output
+	if (player_one == 'R' || player_one == 'r')
+	{
+		if (player_two == 'R' || player_two == 'r')
+		{
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+
+		else if (player_two == 'P' || player_two == 'p')
+		{
+			std::cout << "PAPER COVERS ROCK!!\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+
+
+		else
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER ONE WINS!!\n";
+		}
+		
+
+	}
+
+	else if (player_one == 'P' || player_one == 'p')
+	{
+		if (player_two == 'P' || player_two == 'p') {
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+		else if (player_two == 'S' || player_two == 's')
+		{
+			std::cout << "SCISSORS CUT PAPER!!\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+		else
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER ONE WINS!!\n";
+		}
+	}
+	
+
+	else if (player_one == 'S' || player_one == 's')
+	{
+		if (player_two == 'S' || player_two == 's')
+		{
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+
+		else if (player_two == 'R' || player_two == 'r')
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+
+		else
+		{
+			std::cout << "PAPER COVERS ROCK!!\n";
+			std::cout << "PLAYER ONE WINS!!";
+		}
+	}
+}
