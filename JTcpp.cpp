@@ -3,9 +3,9 @@
 //testing visuaol studio github test
 //Thiis some test 
 
-/*
-#include <iostream>
 
+#include <iostream>
+/*
 int main()
 {
 
@@ -68,7 +68,7 @@ int main()
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 
-*/
+
 
 #include <iostream>
 
@@ -118,5 +118,98 @@ int main()
 		std::cout << "\n\nDo you want to continue Y or N = ";
 		std::cin >> user_input;
 
+	}
+}
+*/
+
+
+//A program to score the rock-paper-sissor game. Each of two users types in either P,R, or S.
+//The program then announces the winner as the basis for determining the winner: 
+//Paper covers Rock, Rock breaks Scissors, Scissors cut Paper, or Nobody Wins. 
+//Program wil allow the users to use lowercase as well as uppercase letters.
+//Program will include a loop that lets the user play again until user says he or she is done.
+
+int main()
+{
+	//heading on page
+	std::cout << "LET'S PLAY! \n ROCK! PAPER! SISSORS!";
+	std::cout << "REMEMBER!! \n lowercase r or uppercase R for ROCK\n";
+	std::cout << "lowercase p or uppercase P for PAPER \n";
+	std::cout << "lowercase s or uppercase S for SCISSOR \n";
+
+	//Player identifier
+	char player_one;
+	char player_two;
+
+	//Player One input box
+	std::cout  << "Rock Paper or Sissors?\n";
+	std::cin >> player_one;
+	//Player Two input box
+	std::cout  << "Rock Paper or Sissors?\n";
+	std::cin >> player_two;
+
+	//Output
+	if (player_one == 'R' || player_one == 'r')
+	{
+		if (player_two == 'R' || player_two == 'r')
+		{
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+
+		else if (player_two == 'P' || player_two == 'p')
+		{
+			std::cout << "PAPER COVERS ROCK!!\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+
+
+		else
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER ONE WINS!!\n";
+		}
+		
+
+	}
+
+	else if (player_one == 'P' || player_one == 'p')
+	{
+		if (player_two == 'P' || player_two == 'p') {
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+		else if (player_two == 'S' || player_two == 's')
+		{
+			std::cout << "SCISSORS CUT PAPER!!\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+		else
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER ONE WINS!!\n";
+		}
+	}
+	
+
+	else if (player_one == 'S' || player_one == 's')
+	{
+		if (player_two == 'S' || player_two == 's')
+		{
+			std::cout << "NOBODY WINS!!\n";
+			std::cout << "DRAW!\n";
+		}
+
+		else if (player_two == 'R' || player_two == 'r')
+		{
+			std::cout << "ROCK BREAKS SCISSORS\n";
+			std::cout << "PLAYER TWO WINS!!\n";
+		}
+
+		else
+		{
+			std::cout << "PAPER COVERS ROCK!!\n";
+			std::cout << "PLAYER ONE WINS!!";
+		}
 	}
 }
