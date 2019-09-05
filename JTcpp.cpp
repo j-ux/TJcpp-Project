@@ -2,57 +2,111 @@
 //
 
 #include <iostream>
+#include <cmath>
 
 int main()
 {
+	/*	double Item_cost;
+		int no_of_years;
 
-	double Item_cost;
-	int no_of_years;
+		int count;
 
-	int count;
+		double inflation_in_percent;
 
-	double inflation_in_percent;
-
-	double Adjusted_price;
-
+		double Adjusted_price;
 
 
-	//<< "This program tells you the expected cost of an item\n"
-	//<< "in a specified number of years with 5 % inflatio rate\n";
 
-	std::cout << "please enter cost of item";
-	std::cin >> Item_cost;
+		//<< "This program tells you the expected cost of an item\n"
+		//<< "in a specified number of years with 5 % inflatio rate\n";
 
-
-	std::cout << "please enter number of years";
-	std::cin >> no_of_years;
-
-	std::cout << "please enter rate of inflation";
-
-	std::cin >> inflation_in_percent;
-
-	double inflation_in_fraction = inflation_in_percent / 100;
+		std::cout << "please enter cost of item";
+		std::cin >> Item_cost;
 
 
-	for (int i = 1; i <= no_of_years; i++) {
+		std::cout << "please enter number of years";
+		std::cin >> no_of_years;
 
-		Adjusted_price = Item_cost * inflation_in_fraction + Item_cost;
+		std::cout << "please enter rate of inflation";
+
+		std::cin >> inflation_in_percent;
+
+		double inflation_in_fraction = inflation_in_percent / 100;
+
+
+		for (int i = 1; i <= no_of_years; i++) {
+
+			Adjusted_price = Item_cost * inflation_in_fraction + Item_cost;
+
+		}
+
+
+		while(Price_adjusted == 0)
+		{
+			price_adjusted = Item_cost + Item_cost * inflation_rate;
+			count++;
+		}
+
+
+
+		std::cout << "your adjusted price will be $" << Adjusted_price;
+
+		// std::cout << "Hello World!\n";
+	}*/
+
+
+	/*int n ;
+
+	int flag = 0
+
+	for (n = 3; n <= 100; n++) {
+
+		if (n % 1==0){
+
+			std::cout << "number not prime";
+
+			}
+
+		if (flag== 0)
+
+		std::cout <<  n,"," ;
 
 	}
 
-	/*
-	while(Price_adjusted == 0)
-	{
-		price_adjusted = Item_cost + Item_cost * inflation_rate;
-		count++;
-	}
-	*/
+}*/
 
 
-	std::cout << "your adjusted price will be $" << Adjusted_price;
+	double litres;
 
-	// std::cout << "Hello World!\n";
+	double miles;
+
+	
+
+
+
+	std::cout << "please enter gasoline in litres";
+	std::cin >> litres;
+
+	double gallon = 3.78 * litres;
+
+
+	std::cout << "please enter the miles";
+	std::cin >> miles;
+
+	double mpg = miles / gallon;
+
+	std::cout << mpg;
+
+
+
+
+
 }
+
+
+
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
