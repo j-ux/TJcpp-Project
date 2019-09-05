@@ -3,23 +3,19 @@
 //testing visuaol studio github test
 //Thiis some test 
 
-<<<<<<< HEAD
+
 #include <iostream>
 #include <cmath>
-=======
->>>>>>> 6262eaa57e69a49f7c290aa04bc6e3d6957e2009
 
-#include <iostream>
-/*
-int main()
+
+
+
+void chp2Q7()
 {
-	/*	double Item_cost;
+		double Item_cost;
 		int no_of_years;
-
 		int count;
-
 		double inflation_in_percent;
-
 		double Adjusted_price;
 
 
@@ -48,82 +44,38 @@ int main()
 		}
 
 
-<<<<<<< HEAD
-		while(Price_adjusted == 0)
-		{
-			price_adjusted = Item_cost + Item_cost * inflation_rate;
-			count++;
-		}
+		
 
 
 
 		std::cout << "your adjusted price will be $" << Adjusted_price;
 
 		// std::cout << "Hello World!\n";
-	}*/
-
-
-	/*int n ;
-
-	int flag = 0
-
-	for (n = 3; n <= 100; n++) {
-
-		if (n % 1==0){
-
-			std::cout << "number not prime";
-
-			}
-
-		if (flag== 0)
-
-		std::cout <<  n,"," ;
-
-	}
-
-}*/
-
-
-	double litres;
-
-	double miles;
-
 	
 
 
+	
+
+}
+
+
+void chp4Q1() {
+
+	double litres;
+	double miles;
 
 	std::cout << "please enter gasoline in litres";
 	std::cin >> litres;
 
 	double gallon = 3.78 * litres;
-
-
+	
 	std::cout << "please enter the miles";
 	std::cin >> miles;
 
 	double mpg = miles / gallon;
 
 	std::cout << mpg;
-
-
-=======
-	
-	while(Price_adjusted == 0)
-	{
-		price_adjusted = Item_cost + Item_cost * inflation_rate;
-		count++;
-	}
-	
->>>>>>> 6262eaa57e69a49f7c290aa04bc6e3d6957e2009
-
-
-
 }
-
-
-
-
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
@@ -136,11 +88,8 @@ int main()
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 
-
-
-#include <iostream>
-
-int main()
+ 
+void chp2Q13()
 {
 	char user_input='Y';
 
@@ -188,7 +137,7 @@ int main()
 
 	}
 }
-*/
+
 
 
 //A program to score the rock-paper-sissor game. Each of two users types in either P,R, or S.
@@ -197,7 +146,7 @@ int main()
 //Program wil allow the users to use lowercase as well as uppercase letters.
 //Program will include a loop that lets the user play again until user says he or she is done.
 
-int main()
+void chp3Q1()
 {
 	//heading on page
 	std::cout << "LET'S PLAY! \n ROCK! PAPER! SISSORS!";
@@ -280,4 +229,17 @@ int main()
 			std::cout << "PLAYER ONE WINS!!";
 		}
 	}
+}
+
+
+
+
+int main() {
+	
+	//chp2Q7();
+	//chp4Q1();
+	//chp2Q13();
+	//chp3Q1();
+
+
 }
