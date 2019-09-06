@@ -231,6 +231,70 @@ void chp3Q1()
 	}
 }
 
+void chp4Q2()
+{
+
+	char user_input = 'Y';
+
+	while (user_input == 'Y') {
+		double weight_in_pounds;
+		double height_in_inches;
+		int age_in_years;
+		double hat_size;
+		double jacket_size;
+		double waist_in_inches;
+
+		//<< this program asks for user's height, weight, and age, and then computes clothing sizes according to the formulas\n>>
+
+		std::cout << "Please enter your weight in pounds";
+		std::cin >> weight_in_pounds;
+
+		std::cout << "Please enter your height in inches";
+		std::cin >> height_in_inches;
+
+		std::cout << "Please enter your age in years";
+		std::cin >> age_in_years;
+
+
+		hat_size = (weight_in_pounds / height_in_inches) * 2.9;
+
+		jacket_size = (height_in_inches * weight_in_pounds) / 288;
+
+		if (age_in_years > 30) {
+		
+			int difference = age_in_years - 30;
+			int how_many_time_to_add = difference / 10;
+			
+			jacket_size = jacket_size + (0.125 * how_many_time_to_add);
+		
+		}
+
+
+		waist_in_inches = weight_in_pounds / 5.7;
+
+		if (age_in_years > 28) {
+			int waist_diff = age_in_years - 28;
+			int waist_how_many_times = waist_diff / 2;
+
+		
+			waist_in_inches = waist_in_inches + (0.1 * waist_how_many_times);
+		
+
+		}
+
+
+		std::cout << "\n Hat size is " << hat_size;
+		std::cout << "\n Jacket size is " << jacket_size;
+		std::cout << "\n Waist size is " << waist_in_inches;
+
+
+		std::cout << "Do you want to continue ";
+		std::cin >> user_input;
+	}
+
+
+}
+
 
 
 
@@ -240,6 +304,8 @@ int main() {
 	//chp4Q1();
 	//chp2Q13();
 	//chp3Q1();
+
+	chp4Q2();
 
 
 }
